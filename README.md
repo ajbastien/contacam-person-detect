@@ -22,7 +22,7 @@ I found the docker version to be faster than desktop version and not API key nee
 4. Install NodeJS
 	*   Follow instructions on NodeJS website
 
-5. Unzip contaCamPrsnDetect.zip files to a directory (e.g. C:\nodejs\contaCamPrsnDetect)
+5. Copy *Detection* files to a directory (e.g. C:\nodejs\contaCamPrsnDetect) or clone the git repository
 
 6. Install Node Modules
 	*   cd to directory (e.g. C:\nodejs\contaCamPrsnDetect)
