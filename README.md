@@ -11,35 +11,35 @@ You will need a computer with a decent amount of RAM available, as Deepstack is 
 I found the docker version to be faster than desktop version and not API key needed.
 
 1. Install Docker
-	Follow instructions on Docker website
+    *	Follow instructions on Docker website
 
 2. Install DeepStack
-	docker pull deepquestai/deepstack
+	*   docker pull deepquestai/deepstack
 
 3. Run DeepStack (This will run everytime docker starts, BE SURE docker stars automatically)
 	docker run -d --restart always -e VISION-DETECTION=True -v localstorage:/datastore -p 80:5000 deepquestai/deepstack
 
 4. Install NodeJS
-	Follow instructions on NodeJS website
+	*   Follow instructions on NodeJS website
 
 5. Unzip contaCamPrsnDetect.zip files to a directory (e.g. C:\nodejs\contaCamPrsnDetect)
 
 6. Install Node Modules
-	cd to directory (e.g. C:\nodejs\contaCamPrsnDetect)
-	npm i
+	*   cd to directory (e.g. C:\nodejs\contaCamPrsnDetect)
+	*   npm i
 	
 7. Modify config.js
-	config.cameraDirectory - Parent Directory of all Cameras - see Global Settings in ContaCam (BE SURE TO INCLUDE LAST \\) e.g. "C:\\ContaCam\\";
-	config.logFilePath - log file path e.g. "C:\\nodejs\\contaCamPrsnDetect\\detect.log";
-	config.snapshotFileName - ContaCam snapshot file. Should be "snapshot.jpg";
-	config.personDetectionFileName - file to write detections too.  Should be 'personDetections.txt';
-	config.itemsURL - OpenHAB Items URL or null;
-	config.itemsURL2 - OpenHAB Items URL for server 2 (if you have 2) or null;
-	config.aiUrl - URL of the DeepQuest Person detection server e.g. "http://192.168.0.199:82/v1/vision/detection";
-	config.auMinConfidence - Minumum confidence accepted (max 1) e.g. 0.75
+	*   config.cameraDirectory - Parent Directory of all Cameras - see Global Settings in ContaCam (BE SURE TO INCLUDE LAST \\) e.g. "C:\\ContaCam\\";
+	*   config.logFilePath - log file path e.g. "C:\\nodejs\\contaCamPrsnDetect\\detect.log";
+	*   config.snapshotFileName - ContaCam snapshot file. Should be "snapshot.jpg";
+	*   config.personDetectionFileName - file to write detections too.  Should be 'personDetections.txt';
+	*   config.itemsURL - OpenHAB Items URL or null;
+	*   config.itemsURL2 - OpenHAB Items URL for server 2 (if you have 2) or null;
+	*   config.aiUrl - URL of the DeepQuest Person detection server e.g. "http://192.168.0.199:82/v1/vision/detection";
+	*   config.auMinConfidence - Minumum confidence accepted (max 1) e.g. 0.75
 
 8. Test config changes - You should see a person detection JSON message
-	npm test
+	*   npm test
 
 9. Replace css from PHP.zip in C:\Program Files (x86)\ContaCam\microapache\htdocs\styles
 
@@ -50,8 +50,8 @@ I found the docker version to be faster than desktop version and not API key nee
 12. Replace summarysnapshot.php in each camera's directory
 
 13. Change each camera's advanced setting to Launch program on "Recording Start"
-	Program: NodeJS executable
-		e.g. C:\Program Files\nodejs\node.exe
-	Parameters: path to appContCam.js camera_name openhab_items 
-		e.g. "C:\nodejs\contaCamPrsnDetect\appContaCam.js" "%name%" FF_Outside_Out_Mot FF_Outside_Front_Camera
+	*   Program: NodeJS executable
+		*   e.g. C:\Program Files\nodejs\node.exe
+	*   Parameters: path to appContCam.js camera_name openhab_items 
+		*   e.g. "C:\nodejs\contaCamPrsnDetect\appContaCam.js" "%name%" FF_Outside_Out_Mot FF_Outside_Front_Camera
 
