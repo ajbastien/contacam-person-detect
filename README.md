@@ -49,7 +49,7 @@ I found the docker version to be faster than desktop version and not API key nee
 
 12. Replace summarysnapshot.php in each camera's directory
 
-13. Change each camera's advanced setting to Launch program on "Recording Start"
+13. Change each camera's *Advanced Settings* to Launch a program on *Recording Start*
 	*   Program: NodeJS executable
 		*   e.g. C:\Program Files\nodejs\node.exe
 	*   Parameters: path to appContCam.js camera_name openhab_items 
