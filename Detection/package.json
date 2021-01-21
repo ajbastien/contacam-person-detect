@@ -1,0 +1,21 @@
+{
+  "name": "contacamprsndetect",
+  "version": "1.0.0",
+  "description": "ContaCam Person Detection",
+  "main": "appContaCam.js",
+  "scripts": {
+    "start": "node appContaCam.js",
+    "test": "node testAI.js"
+  },
+  "keywords": [
+    "ContaCam",
+    "AI",
+    "detect"
+  ],
+  "author": "Al Bastien",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "fs": "^0.0.1-security"
+  }
+}

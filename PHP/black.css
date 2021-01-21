@@ -1,0 +1,206 @@
+/* Global style */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	background-color: #000000;
+	color: #bbbbbb;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+div#header {
+	width: 100%;
+}
+
+/* Pages title */
+h1 {
+	font-size: 36px;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+	vertical-align: bottom;
+	color: #bbbbbb;
+}
+
+/* Smaller titles */
+h2 {
+	font-size: 18px;
+	margin: 8px 0 6px 0;
+	font-weight: bold;
+	vertical-align: bottom;
+	color: #bbbbbb;
+}
+
+/* Centered containers */
+div.wrap {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Links */
+a {
+	font-size: 16px;
+	text-decoration: none;
+}
+a:link {
+	color: #33ccff;
+}
+a:visited {
+	color: #33ccff;
+}
+a:active {
+	color: #33ccff;
+}
+a:hover, a:focus {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Pagination */
+div.pagination {
+	margin: 20px;
+	text-align: center;
+}
+div.pagination a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+div.pagination a.highlight:link,
+div.pagination a.highlight:visited,
+div.pagination a.highlight:active,
+div.pagination a.highlight:hover,
+div.pagination a.highlight:focus {
+	color: #ffa23c;
+	text-decoration: underline;
+}
+
+/* Thumbs */
+span.thumbcontainer {
+	display: inline-block;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+span.thumbcontainer a:visited {
+	color: #00aa00;
+}
+span.thumbcontainer a:active, span.thumbcontainer a:focus {
+	color: #ffa23c;
+}
+span.thumbcontainer span {
+	font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	margin: 5px; /* same margin as for the below: a img */
+	background: #555555;
+}
+a.notselected, a.lastselected, a.personDetected {
+	outline: none;
+}
+a img {
+	border: 0;
+	margin: 5px;
+	padding: 0;
+}
+a:visited img {
+	border: 1px solid #00aa00;
+	margin: 4px;
+	padding: 0;
+}
+a.lastselected img, a.lastselected:visited img, a:active img, a:focus img {
+	border: 2px solid #ffa23c;
+	margin: 3px;
+	padding: 0;
+}
+a.personDetected img, a.personDetected:visited img {
+	border: 4px solid #eb11ce;
+	margin: 3px;
+	padding: 0;
+}
+
+
+/* Controls */
+video {
+	background-color: transparent;
+}
+span.globalbuttons {
+	white-space: nowrap;
+}
+span.globalbuttons a {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	font-family: sans-serif,Arial,Helvetica;
+	display: inline-block;
+	width: 38px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #070707;
+	background-color: #ededed;
+	border: 1px solid #d0d0d0;
+}
+a.camoffbuttons {
+	background: transparent url('camoff_black.png') no-repeat center center;
+}
+div#imagereloading {
+	margin: 6px 0 0 0;
+	text-align: center;
+}
+input {
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-family: sans-serif,Arial,Helvetica;
+	padding: 2px;
+	margin: 2px 0;
+	color: #070707;
+	text-align: center;
+	background-color: #ededed; 
+	border: 1px solid #d0d0d0;
+}
+input[type='date'] {
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	font-size: 14px;
+}
+div#day {
+	margin: 0;
+	padding: 8px 0;
+}
+a#back2top {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: none;
+	position: fixed;
+    top: 4px;
+    right: 4px;
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    cursor: pointer;
+    background-color: #ddd;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
